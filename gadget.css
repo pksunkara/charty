@@ -1,0 +1,55 @@
+#content_charty {
+        background-color:#000000;
+        color:#FFFFFF;
+        font-size: 11px;
+        text-align:center;
+        min-height:100px;
+}
+
+#content_charty a {
+        color: #FFFF00;
+        text-decoration:none;
+}
+
+#content_charty a:hover {
+        color: #AAAAAA;
+        text-decoration:none;
+}
+
+#content_charty .title {
+        font-size: 18px;
+}
+
+#content_charty .chart_charty .chart_form_charty {
+	text-align:left;
+	width:400px;
+	margin: auto;
+}
+
+#content_charty #charty_steps{
+        color: #00FF00;
+        font-weight: bold;
+}
+
+#content_charty #charty_error{
+        color: #FF0000;
+        font-weight: bold;
+}
+
+#content_charty .chart_charty{
+        margin-top:30px;
+        padding-top:10px;
+}
+
+#content_charty input, textarea, select {
+        border: 0.15em solid #000000;
+        width: 150px;
+}
+
+#content_charty label {
+        float:left;
+        font-weight:bold;
+        margin-right:2.5em;
+        text-align:right;
+        width:10em;
+}

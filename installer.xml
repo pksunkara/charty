@@ -1,0 +1,10 @@
+<extension 
+    name="Charty"
+    thumbnailUrl="http://gwave.suncoding.com/images/charty/screenshot.png"
+    description="Collaborate on a Interactive chart with other wave participants. Great use for planning, marketing and examining data."> 
+  <author name="Sun Web Dev, Inc."/> 
+  <menuHook location="toolbar" text="Add Charty"
+      iconUrl="http://gwave.suncoding.com/images/charty/icon.png"> 
+    <insertGadget url="http://gwave.suncoding.com/gadgets/charty/gadget.xml"/> 
+  </menuHook> 
+</extension> 

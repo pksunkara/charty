@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <Module>
+                <ModulePrefs title="Charty" author="Pavan Kumar Sunkara" height="100" author_email="pavan.sss1991@gmail.com">
+                        
+                        <Require feature="rpc" />
+                        <Require feature="dynamic-height" />
+                        <Require feature="locked-domain" />  
+                        
+                </ModulePrefs>
+                
+                <Content type="html">
+                        <![CDATA[     
+                                <style type="text/css">
+                                        @import url("http://gwave.suncoding.com/gadgets/charty/gadget.css");
+                                </style>
+                                <script type="text/javascript" src="http://wave-api.appspot.com/public/wave.js"></script>
+                                <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+                                <script type="text/javascript" src="http://gwave.suncoding.com/gadgets/charty/gadget.js"></script>
+                                <script type="text/javascript">
+                                	google.load("visualization", "1", {packages: [ "piechart", "areachart", "linechart", "barchart", "columnchart" ]});
+                                        gadgets.util.registerOnLoadHandler(init);
+                                </script>
+                                
+                                <div id="content_charty">
+                                        <p><span id="charty_error"></span></p>
+                                        <p><span id="charty_steps"></span></p>
+                                        <div id="chart_div" class="chart_charty">
+                                        	<div id="chart_form_div" class="chart_form_charty">
+                                        		<br/>
+	                                                <p><label>Title of chart:</label><input type="text" id="chart_title"></p>
+        	                                        <p><label>Type of chart:</label><select id="chart_type">
+                	                                                                        <option value="piechart" >Pie Chart</option >
+                        	                                                                <option value="linechart">Line Chart</option>
+                                	                                                        <option value="areachart">Area Chart</option>
+                                	                                                        <option value="barchart">Bar Chart</option >
+                                	                                                        <option value="columnchart">Column Chart</option>
+                                        	                                        </select>
+                                                	</p>
+                                                	<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Start Chart" onclick="setTitle()"></p>                                
+						</div>
+                                        </div>
+                                        <sub>www.suncoding.com</sub>
+                                        <p><span id="debug"></span></p>
+                                </div>
+                                
+                                <script type="text/javascript">
+					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+				</script>
+				<script type="text/javascript">
+					try {
+						var pageTracker = _gat._getTracker("UA-9209860-5");
+						pageTracker._trackPageview();
+					} catch(err) {}
+				</script>   
+				                             
+                        ]]>
+                </Content>
+        </Module>
